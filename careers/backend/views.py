@@ -5,12 +5,12 @@ from django.http import HttpResponse, Http404
 def index(request):
     return render(request, "backend/index.html")
 
-texts = ["TEST 1 lalalallwrqk12r12fwq2",
+elements = ["backend/button.html",
         "TEST 2 lalalallwrqk12r12fwqsdqwql21l,12,r",
         "TEST 3 lalalallwrqk12r12fwasdq111fffffffasd"]
 
 def section(request, num):
     if 1 <= num <= 3:
-        return HttpResponse(texts[num - 1])
+        return render(request, elements[num - 1])
     else:
         raise Http404("No such section")

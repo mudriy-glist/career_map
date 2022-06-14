@@ -121,9 +121,34 @@
                 font-size: 18px;
             }
 
+            nav ul li {
+                padding-left: 10px;
+            }
 
+            .waviy {
+            position: relative;
+            }
+            .waviy span {
+            position: relative;
+            display: inline-block;
+            font-size: 40px;
+            color: black;
+            text-transform: uppercase;
+            animation: flip 2s infinite;
+            animation-delay: calc(.2s * var(--i))
+            }
+            @keyframes flip {
+            0%,80% {
+                transform: rotateY(360deg) 
+            }
+            }
 
-
+        #mecha {
+                background-image: url({% static 'backend/drawing_gearscc.jpg' %});
+                }
+        #woodoo {
+            background-image: url({% static 'backend/voodoo_rez.jpg' %});
+                }
             
         </style>
     </head>
@@ -131,7 +156,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'backend/avatar_logo.jpg' %}" alt="logo" style="width: 120px;" class="rounded-pill">
+                <img src="{% static 'backend/avatar_logo.jpg' %}" alt="logo" style="width: 120px; height: 40px">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -142,13 +167,13 @@
                     <a class="nav-link" href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link active" href="#">Yet</a>
+                    <a class="nav-link active" href="#">About us</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link active" href="#">Just</a>
+                    <a class="nav-link active" href="#">Learning</a>
                   </li>
                   <li>
-                      <a class="nav-link active" href="#">Navbar</a>
+                      <a class="nav-link active" href="#">Contact us</a>
                   </li>
                 </ul>         
               </div>

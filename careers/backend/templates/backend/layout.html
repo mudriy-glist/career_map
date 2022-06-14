@@ -10,7 +10,8 @@
         {% endblock %}
         <style>
             body {
-                background: #ffffff;
+                background: rgb(255,203,179);
+                background: linear-gradient(90deg, rgba(255,203,179,1) 0%, rgba(247,212,242,1) 49%, rgba(234,232,255,1) 100%);
             }
 
             ul.nav223 {
@@ -108,13 +109,17 @@
                 -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
                 -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
                 transition: all 0.4s ease 0s;
+                text-decoration: none;
             }
 
             .col {
                 padding: 55pt;
             }
 
-
+            nav ul li a {
+                font-family: sans-serif;
+                font-size: 18px;
+            }
 
 
 
@@ -126,7 +131,7 @@
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'backend/avatar_logo.jpg' %}" alt="logo" style="width: 110px;" class="rounded-pill">
+                <img src="{% static 'backend/avatar_logo.jpg' %}" alt="logo" style="width: 120px;" class="rounded-pill">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -154,7 +159,7 @@
                 <h1 style="font-size: 72pt; padding: 10pt; text-align: center">Davall Career Paths</h1>
             </div>
         </div>
-        <div class="row" width="100%" style="justify-content: center; padding-top: 7%; ">
+        <!-- <div class="row" width="100%" style="justify-content: center; padding-top: 7%; ">
             <div class="col-" style="justify-content: center;">
                <div class="col">
                     <a class="int-links" href="{% url 'mecha' %}" style="background-color: darkgray;" target="_blank" rel="nofollow noopener">Mecha</a>
@@ -165,7 +170,10 @@
                     <a class="int-links" href="{% url 'woodoo' %}" style="background-color: rgb(94, 18, 160);" target="_blank" rel="nofollow noopener">Woodoo</a>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
+        {% block body %}
+        {% endblock %}
         <div class="row" width="100%">
             <div class="col">
             <ul class="nav223">
@@ -183,7 +191,5 @@
               </ul> 
             </div>
         </div>
-        {% block body %}
-        {% endblock %}
     </body>
 </html>

@@ -1,0 +1,133 @@
+body {
+    background: rgb(48,63,159);
+background: linear-gradient(90deg, rgba(48,63,159,1) 0%, rgba(121,134,203,1) 4%, rgba(255,255,255,1) 50%, rgba(121,134,203,1) 97%, rgba(48,63,159,1) 100%);
+}
+    
+ul.nav223 {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+ul.nav223 li {
+    list-style: none;
+    }
+
+ul.nav223 li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    }
+
+ul.nav223 li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+    }
+
+ul.nav223 li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+    }
+
+ul.nav223 li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+    }
+
+ul.nav223 li a:hover:before {
+    top: 0;
+    }
+
+ul.nav223 li:nth-child(1) a:before{
+    background: #3b5999;
+    }
+
+ul.nav223 li:nth-child(2) a:before{
+    background: #55acee;
+    }
+
+ul.nav223 li:nth-child(3) a:before {
+    background: #0077b5;
+    }
+
+ul.nav223 li:nth-child(4) a:before {
+    background: #dd4b39;
+    }
+
+
+.int-links {
+    font-size: 35pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:250px;
+    transition: all 0.4s ease 0s;
+      
+}
+
+.int-links:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+}
+
+.col {
+    padding: 55pt;
+}
+
+nav ul li a {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+nav ul li {
+    padding-left: 10px;
+}
+
+.waviy {
+position: relative;
+}
+.waviy span {
+position: relative;
+display: inline-block;
+font-size: 40px;
+color: black;
+text-transform: uppercase;
+animation: flip 2s infinite;
+animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+0%,80% {
+    transform: rotateY(360deg) 
+}
+}

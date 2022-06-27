@@ -45,56 +45,69 @@
 	<div id="east" class="column effect-hover">
 	  <div class="content">
 		<i class="fa fa-magic" aria-hidden="true"></i>
-		<h2>Go <span>Woodoo</span></h2>
+		<h2>Go <span>Voodoo</span></h2>
 		<h3>Do something amazing</h3>
 		<p>And Click</p>
 	  </div>			
 	</div>
-	<!--Logo-->
-	
   </div>
   
   <!--Left side content-->
-  <div id="west-overlay" class="overlay">
+	<div id="west-overlay" class="overlay">
 	   <div class="grid">      
-		 <div class="column">
-		   <img src="{% static 'backend/clockman.png' %}"/>
-		 </div>       
-		  <div class="column">  
-			<div class="product-content">
-			   <h1>Mecha Career Path</h1>
-			  <p>Your heart and a machine, there are one. You are a prophet of techno era.</p>
-			  <a href="#" class="buy-button">           
-				<span>Explore more</span>
-			  </a>
-		 </div>         
-	   </div><!--End Grid-->
+			<div class="column">
+				<img src="{% static 'backend/clockman.png' %}"/>
+			</div>       
+			<div class="column">  
+				<div class="product-content">
+			   		<h1>
+						Mecha Career Path
+					</h1>
+			  		<p>
+						Your heart and a machine, there are one. You are a prophet of techno era.
+					</p>
+			  		<a href="{% url 'mecha' %}" class="buy-button">           
+						<span>
+							Explore more
+						</span>
+			  		</a>
+				</div>         
+	   		</div>
 	
-	   <div class="close-icon">
-		  <div></div>
-		  <div></div>
-		</div> 
-  </div>
+	   		<div class="close-icon">
+		  		<div></div>
+		  		<div></div>
+			</div> 
+  		</div>
+	</div>
   <!--Right side content-->
-  <div id="east-overlay" class="overlay">
-	   <div class="grid">      
-		 <div class="column">
-		   <img src="{% static 'backend/woodoo_master.png' %}"/>
-		 </div>       
-		  <div class="column">  
-			<div class="product-content">
-			   <h1>Woodoo Career Path</h1>
-			  <p>With these, you're the center of the Universe, floating in microgravity between distant stars. This is what you want.</p>
-			  <a href="#" class="buy-button">           
-				<span>Explore more</span>
-			  </a>
-		 </div>         
-	   </div><!--End Grid-->
-	
-	   <div class="close-icon">
-		  <div></div>
-		  <div></div>
-		</div> 
+	<div id="east-overlay" class="overlay">
+		<div class="grid">      
+			<div class="column">
+		   		<img src="{% static 'backend/woodoo_master.png' %}"/>
+			</div>       
+			<div class="column">  
+				<div class="product-content">
+			   		<h1>
+						Voodoo Career Path
+					</h1>
+					<p>
+						With these, you're the center of the Universe, floating in microgravity between distant stars. This is what you want.
+					</p>
+					<a href="{% url 'woodoo' %}" class="buy-button">           
+						<span>
+							Explore more
+						</span>
+					</a>
+				</div>         
+			</div><!--End Grid-->
+		
+			<div class="close-icon">
+				<div></div>
+				<div></div>
+			</div> 
+		</div>
+	</div>
 
         
 

@@ -4,6 +4,9 @@
 {% block head %}
 <title>Woodoo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 <style>
     body {
         background-image: url("{% static 'backend/bg_voodoo.jpg' %}");
@@ -37,6 +40,118 @@
         width: 30%;
     }
 
+    .voodoo_popup1 .popup_text {
+    position: absolute;
+    left: 38%;
+    top: 15%;
+    width: 20%;
+    font-size: 0.9vw;
+    line-height: 1vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+ul.nav223 {
+    display: flex;
+    position: absolute;
+    bottom: -95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+ul.nav223 li {
+    list-style: none;
+    }
+
+ul.nav223 li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    }
+
+ul.nav223 li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+    }
+
+ul.nav223 li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+    }
+
+ul.nav223 li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+    }
+
+ul.nav223 li a:hover:before {
+    top: 0;
+    }
+
+ul.nav223 li:nth-child(1) a:before{
+    background: #3b5999;
+    }
+
+ul.nav223 li:nth-child(2) a:before{
+    background: #55acee;
+    }
+
+ul.nav223 li:nth-child(3) a:before {
+    background: #0077b5;
+    }
+
+ul.nav223 li:nth-child(4) a:before {
+    background: #dd4b39;
+    }
+.col {
+    padding: 55pt;
+}
+
+.raw {
+    position: absolute;
+    bottom: -76%;
+}
+
+#close_a {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+#close_a img {
+    width: 30px;
+}
+
+#close_a {
+    font-family: sans-serif;
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #262626;
+    font-size: 1.6vw;
+}
+
+
+
+
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="{% static 'backend/cisco.js' %}"></script>
@@ -51,10 +166,36 @@
         </p>
         <p class="voodoo_popup1">
             <img src="{% static 'backend/popup1.png' %}" alt="popup"/>
+            <span class="popup_text">
+                "Here you go, it's time to join a cult! You are very fresh and suspiciously pale, but it's okay."
+            </span>
         </p>
         
     </center>
 </div>
 
+ <div class="row" width="100%">
+            <div class="col">
+            <ul class="nav223">
+                <li class="nav223">
+                  <a href="https://www.facebook.com/mtithefutureinmotion/" target="_blank">
+                <i class="fa fa-facebook-f icon"></i></a>
+                </li>
+                <li class="nav223">
+                  <a href="http://www.davall.co.uk/" target="_blank"><i class="fa fa-globe icon"></i></a>
+                </li>
+                <li class="nav223">
+                  <a href="https://www.linkedin.com/company/davall-gears-ltd/" target="_blank"><i class="fa fa-linkedin icon"></i></a></li>
+                <li class="nav223">
+                  <a href="https://www.instagram.com/mtimotion/" target="_blank"><i class="fa fa-instagram icon"></i></a></li>
+              </ul> 
+            </div>
+        </div>
 
+    <a id="close_a"  href="{% url 'index' %}">
+        <img src="{% static 'backend/close_a.png' %}" />
+        <span>
+            Back
+        </span>
+    </a>
 {% endblock%}

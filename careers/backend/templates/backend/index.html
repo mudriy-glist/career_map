@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'backend/styles.css' %}">
+<script src="{% static 'backend/scripts.js' %}"></script>
 <style>
 	  #west{
     background: url("{% static 'backend/blueprint.png' %}") no-repeat center right;
@@ -19,18 +21,6 @@
 {% endblock %}
 
 {% block body %}
-<!-- <div class="row" width="100%" style="justify-content: center; padding-top: 7%; ">
-    <div class="col-" style="justify-content: center;">
-       <div class="col">
-            <a class="int-links" id="mecha" href="{% url 'mecha' %}" rel="nofollow noopener">Mecha</a>
-       </div>
-    </div>
-    <div class="col-" style="justify-content: center;">
-        <div class="col">   
-            <a class="int-links" id="woodoo" href="{% url 'woodoo' %}" style="background-color: rgb(94, 18, 160);" rel="nofollow noopener">Woodoo</a>
-        </div>
-    </div>
-</div> -->
 <div class="grid">
 	<!--Left side-->
 	<div id="west" class="column effect-hover">
@@ -108,7 +98,5 @@
 			</div> 
 		</div>
 	</div>
-
-        
-
+ 
 {% endblock%}

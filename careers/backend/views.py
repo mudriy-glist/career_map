@@ -10,3 +10,6 @@ def mecha(request):
 
 def woodoo(request):
     return render(request, "backend/woodoo.html")
+
+def voodoo_newstarter(request):
+    return render(request, "backend/voodoo_newstarter.html")

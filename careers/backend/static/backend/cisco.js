@@ -41,7 +41,9 @@ $(".voodoo_link3").mouseover(function(e){
 	$(".top_content_main p, .top_row_content").hide();
 });
 	
-
+$("#voodoo_pic1").click(function() {
+	$("#hided_link").click();
+})
 	
 	
 	

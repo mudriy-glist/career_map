@@ -2,7 +2,77 @@
 {% load static %}
 
 {% block head %}
+<title>Voodoo Newstarter</title>
+<!-- <style>
+    body {
+        background: linear-gradient(0deg, rgba(242,210,250,1) 0%, rgba(169,98,199,1) 59%, rgba(93,91,94,1) 100%);
+        background-repeat: no-repeat;
+
+    }
+    h1 {
+        font-size: 72pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: whitesmoke
+    }
+</style> -->
+<link rel="stylesheet" href="{% static 'backend/style_voodoo_newstarter.css' %}">
 {% endblock %}
 
 {% block body %}
+<center>
+    <!-- <h1 >
+        Voodoo Newstarter
+    </h1> -->
+    <!-- ALL CREDIT FOR THE SCROLLING TEXT GOES TO 
+     Craig Buckler
+     http://www.sitepoint.com/css3-starwars-scrolling-text/ 
+
+Blame me for the music via embedded video bit
+-->
+
+<div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+    <div style="margin-top:-290px;">
+    <object width="420" height="315">
+      <param name="movie" value="https://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2"></param>
+      <param name="allowFullScreen" value="true"></param>
+      <param name="allowscriptaccess" value="always"></param>
+      <embed src="https://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+    </object>
+    </div>
+  </div>
+  
+  <p id="start">A short time ago in a browser very, very close&hellip;</p>
+  
+  <h1>Voodoo Newstarter<sub>Your adventure begins here!</sub></h1>
+  
+  <div id="titles">
+    <div id="titlecontent">
+  
+        <p class="center">EPISODE I<br />
+        A NEW HOPE OF THE CULT</p>
+
+        <p>It is a period of hiring wars</p>
+
+        <p>This is a demonstration of Star Wars-style scrolling 3D titles in CSS3. It possibly has no practical purpose whatsoever but it looks great and you can impress your friends.</p>
+
+        <p>Just to mention, I couldn't impress hiring agents anyways.</p>
+
+        <p>I do remember a days when I wasn't a developer. It was days filled with joy and dreams about bright future</p>
+
+        <p>Dreams about becoming astronaut or, perhaps, firefigher or president</p>
+
+        <p>Did I ever thought that I will become a developer. No, not really. But it isn't what is matters this days</p>
+
+        <p>Welcome to the cult, little voodooist. We're happy to inform you that we don't have in our possession any spare chairs, but we definitely have got a lot of bright ideas how to change your future!</p>
+
+        <p>Never forget that you've been summoned here by the Great Voodoo, so you shouldn't be afraid of working for foodxD</p>
+
+        <p class="center">Free labor for the Repubic, Luke!</p>
+
+        <p>Sorry. Couldn't resist it.</p>
+    
+      </div>
+  </div>
+  <iframe style="visibility:hidden" width="560" height="315" src="https://www.youtube.com/embed/1KAOq7XX2OY" frameborder="0" allowfullscreen></iframe>
+</center>
 {% endblock %}

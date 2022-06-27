@@ -17,10 +17,19 @@
     background: url("{% static 'backend/woodoo.jpg' %}") no-repeat center bottom;
     background-size: cover;
   }
+  #company_name {
+	font-size: 72pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: whitesmoke;
+	position: absolute;
+	top: -5%;
+	left: 27%;
+  }
 </style>
 {% endblock %}
 
 {% block body %}
+
 <div class="grid">
 	<!--Left side-->
 	<div id="west" class="column effect-hover">
@@ -98,5 +107,5 @@
 			</div> 
 		</div>
 	</div>
- 
+	<h1 id="company_name">DAVALL CAREERS</h1>
 {% endblock%}

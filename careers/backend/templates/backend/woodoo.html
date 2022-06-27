@@ -29,6 +29,7 @@
         left: 47.2%;
         bottom: -74.85%;
         width: 11.9%;
+        z-index: 1;
     }
     .voodoo_popup1 {
         display: none;
@@ -148,11 +149,18 @@ ul.nav223 li:nth-child(4) a:before {
     color: #262626;
     font-size: 1.6vw;
 }
-.voodoo_link1 a{
-    display: none;
+
+.hidden_link1 {
+    display: hidden;
+    position: absolute;
+    left: 40.2%;
+    bottom: -72.85%;
+    width: 15.9%;
+    background-color: rgba(49, 23, 36, 0);
+    background-size: 11.9%;
+    height: 12.1%;
+    z-index: 0;
 }
-
-
 
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -176,6 +184,8 @@ ul.nav223 li:nth-child(4) a:before {
         
     </center>
 </div>
+<a class="hidden_link1" href="{% url 'voodoo_newstarter' %}"></a>
+
 
  <div class="row" width="100%">
             <div class="col">

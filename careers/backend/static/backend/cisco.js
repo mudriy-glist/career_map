@@ -43,7 +43,7 @@ $(".voodoo_link3").mouseover(function(e){
 	
 $("#voodoo_pic1").click(function() {
 	$("#hided_link").click();
-})
+});
 	
 	
 	

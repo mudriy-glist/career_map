@@ -22,7 +22,7 @@
     <center>
         <img src="{% static 'backend/voodoo_map.png' %}" alt="map" width="60%"/>
         <p class="voodoo_link1">
-           <img src="{% static 'backend/newstarter.png' %}" alt="newstarter" width="60%"/>
+           <img src="{% static 'backend/newstarter.png' %}"  id="voodoo_link1" alt="newstarter" width="60%"/>
         </p>
         <p class="voodoo_popup1">
             <img src="{% static 'backend/popup1.png' %}" alt="popup"/>
@@ -33,7 +33,7 @@
         
     </center>
 </div>
-<a class="hidden_link1" href="{% url 'voodoo_newstarter' %}"></a>
+<a class="hidden_link1" id="hidden_link1" href="{% url 'voodoo_newstarter' %}"></a>
 
 
  <div class="row" width="100%">

@@ -39,14 +39,8 @@ $(".voodoo_link3").mouseover(function(e){
     $(".voodoo_popup3").show();
 	$(".voodoo_link3").removeClass("active");
 	$(".top_content_main p, .top_row_content").hide();
-});
-	
-$("#voodoo_pic1").click(function() {
-	$("#hided_link").click();
-});
-	
-	
-	
+	});
+		
 });
 
 

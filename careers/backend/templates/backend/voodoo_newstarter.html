@@ -3,56 +3,76 @@
 
 {% block head %}
 <title>Voodoo Newstarter</title>
+<link rel="stylesheet" href="{% static 'backend/style_voodoo_newstarter.css' %}">
 <style>
   h1 {
     text-align: center;
     font-size: 72pt;
     font-weight: bold;
+    color: white;
   }
   body {
-    background: rgb(255,144,241);
-    background: linear-gradient(90deg, rgb(250, 163, 255) 0%, rgb(247, 201, 255) 50%, rgb(250, 163, 255) 100%);
+    height: 100%;
+    width: 100%;
+    background: url("{% static 'backend/voodoo_bg.jpg' %}") top no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
-
-
   .container {
     width: 40%;
+    font-size: 14pt;
+    font-weight: bold;
     text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20%;
   }
 
-  .container button {
-    width: 250px;
-    height: 100px;
-    border-radius: 50%;
+
+  .cover {
+    width: 100%;
+    height: 30%;
+    background-image: url("{% static 'backend/voodoo_cover.png' %}");
+    background-size: contain;
+    position: absolute;
+    margin: 0;
+    padding: 0;
   }
 </style>
 {% endblock %}
 
 {% block body %}
-
-  <h1>
-    Voodoo Newstarter
-  </h1>
-
+  <div class="cover">
+    <h1>
+      Voodoo Newstarter
+    </h1>
+  </div>
   <center>
     <div class="container">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit massa ac eros finibus sollicitudin. Donec sed ullamcorper turpis. Donec sollicitudin in nisi a iaculis. Integer efficitur tristique felis ut auctor. Mauris vel fermentum tortor. Phasellus eu accumsan nunc. Fusce nec lacus urna. Maecenas sed consectetur enim. Praesent sed lacinia nisi. Nam vel nisi ut dolor feugiat dapibus a id nunc. Nam nisi justo, malesuada quis tellus rutrum, aliquet dignissim urna. Maecenas ligula orci, rutrum et leo a, porta fermentum ipsum. Nulla facilisi. Donec ac semper dui, condimentum elementum mi.
-
+      </p>
         Donec ornare ipsum sed sapien tristique consectetur. Sed ut magna risus. Fusce eget lobortis dui, vel pharetra diam. Integer mollis, neque ut gravida feugiat, ante justo tempor erat, sit amet porttitor orci augue id massa. In consequat lacinia odio a elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis varius turpis suscipit nibh aliquam, at consectetur elit ornare. Suspendisse suscipit luctus felis, non luctus lectus dignissim in. Aenean vel pulvinar elit.
-        
+      <p>
         Sed id malesuada augue, non feugiat tortor. Donec justo odio, ultricies id efficitur sit amet, faucibus eget purus. Nunc egestas id lorem viverra vestibulum. Nulla sagittis, risus eu mollis ornare, dolor ligula suscipit leo, at imperdiet turpis urna quis sapien. Morbi imperdiet augue ut justo mattis tincidunt. Suspendisse elit turpis, ornare in quam eu, pellentesque aliquet urna. Nunc vel nunc quis ipsum commodo cursus vitae ultrices diam. Ut in sodales est. Donec interdum ex sed vestibulum congue. Phasellus accumsan vestibulum lorem in tempor. Suspendisse posuere ullamcorper elit, nec sollicitudin nibh fermentum vel. In vulputate nibh a consequat pharetra.
-        
+      </p>  
         Curabitur massa dolor, placerat a libero nec, malesuada blandit dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut hendrerit aliquet nisi, id vehicula felis rutrum sagittis. Proin vel nisl vel elit rhoncus efficitur. Pellentesque consequat, diam in egestas venenatis, lorem nunc varius ligula, in dictum neque ipsum sit amet nisl. Integer fermentum ultrices bibendum. Vivamus laoreet sagittis quam, ut consectetur mauris fringilla in. Suspendisse sollicitudin quis ipsum id iaculis. Nulla porttitor eros at nulla aliquam porta.
-        
+      <p>  
         Nam odio quam, euismod ac dignissim sed, gravida eu arcu. Aenean venenatis lectus quam, in mattis nisl suscipit ut. Proin gravida libero nisl, sit amet pulvinar mauris hendrerit id. Proin venenatis nulla id libero mollis, in vehicula velit tristique. Cras ultricies eleifend lorem, a viverra mi cursus sit amet. Pellentesque consequat rhoncus tortor at facilisis. Suspendisse scelerisque interdum turpis, non condimentum lectus venenatis sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec ultrices elit. Nam vitae tortor vel nisi euismod consequat. Donec efficitur gravida laoreet.
-    </p>
-    <button>
-      APPLY
-    </button>
+      </p>
+    <div class="wrap">
+      <button class="button">Apply</button>
+    </div>
   </div>
 </center>
 
+<a id="close_a"  href="{% url 'index' %}">
+  <img src="{% static 'backend/close_a.png' %}" />
+  <span>
+      Back
+  </span>
+</a>
   
 
 {% endblock %}

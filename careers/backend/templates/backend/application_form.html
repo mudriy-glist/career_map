@@ -23,7 +23,23 @@
     overflow-y: scroll;
 
   }
-  
+  #close_a {
+    position: absolute;
+    top: 9%;
+    left: 5%;
+    }
+    
+    #close_a img {
+    width: 30px;
+    }
+    
+    #close_a {
+    font-family: sans-serif;
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #262626;
+    font-size: 1.6vw;
+    }
 </style>
 
 {% endblock %}
@@ -40,6 +56,11 @@
         <img src="{% static 'backend/yet_doge.png' %}" alt="yet_doge">
     </div>
 </center>
-
+<a id="close_a"  href="{% url 'index' %}">
+    <img src="{% static 'backend/close_a.png' %}" />
+    <span>
+        Back
+    </span>
+  </a>
 
 {% endblock %}

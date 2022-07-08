@@ -13,3 +13,6 @@ def woodoo(request):
 
 def voodoo_newstarter(request):
     return render(request, "backend/voodoo_newstarter.html")
+
+def application_form(request):
+    return render(request, "backend/application_form.html")

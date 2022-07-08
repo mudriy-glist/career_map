@@ -5,10 +5,25 @@
 
 <title>Application</title>
 <style>
+    html {
+        height: 100%;
+        width: 100%;
+    }
     h1 {
         font-size: 72px;
-        font-family: sans-serif;
+        font-family: sans-serif; 
     }
+    body {
+    height: 100%;
+    width: 100%;
+    background: url("{% static 'backend/voodoo_bg.jpg' %}") top no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+  }
+  
 </style>
 
 {% endblock %}
@@ -16,13 +31,15 @@
 {% block body %}
 
 <center>
+   
     <h1>
-        Your Application is below
+        This page is under development<br/>
+        Please see Doge below
     </h1>
-    <h1>
-        Maybe
-    </h1>
-    <img src="{% static 'backend/yet_doge.png' %}" alt="yet_doge">
+     <div class="doge">
+        <img src="{% static 'backend/yet_doge.png' %}" alt="yet_doge">
+    </div>
 </center>
+
 
 {% endblock %}

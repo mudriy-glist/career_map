@@ -9,21 +9,21 @@
 <link rel="stylesheet" href="{% static 'backend/styles.css' %}">
 <script src="{% static 'backend/scripts.js' %}"></script>
 <style>
-	  #west{
-    background: url("{% static 'backend/blueprint.png' %}") no-repeat center right;
-    background-size: cover;
+	#west{
+		background: url("{% static 'backend/blueprint.png' %}") no-repeat center right;
+		background-size: cover;
   }
-  #east{
-    background: url("{% static 'backend/woodoo.jpg' %}") no-repeat center bottom;
-    background-size: cover;
+	#east{
+		background: url("{% static 'backend/woodoo.jpg' %}") no-repeat center bottom;
+		background-size: cover;
   }
-  #company_name {
-	font-size: 72pt;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: whitesmoke;
-	position: absolute;
-	top: -5%;
-	left: 27%;
+	#company_name {
+		font-size: 72pt;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: whitesmoke;
+		position: absolute;
+		top: -5%;
+		left: 27%;
   }
 </style>
 {% endblock %}
@@ -35,18 +35,36 @@
 	<div id="west" class="column effect-hover">
 	  <div class="content">
 		<i class="fa fa-cogs" aria-hidden="true"></i>
-		<h2>Go <span>Mecha</span></h2>
-		<h3>Do something amazing</h3>
-		<p>And Click</p>
+		<h2>
+			Go 
+			<span>
+				Mecha
+			</span>
+		</h2>
+		<h3>
+			Do something amazing
+		</h3>
+		<p>
+			And Click
+		</p>
 	  </div>		    
 	</div>
 	<!--Right side-->
 	<div id="east" class="column effect-hover">
 	  <div class="content">
 		<i class="fa fa-magic" aria-hidden="true"></i>
-		<h2>Go <span>Voodoo</span></h2>
-		<h3>Do something amazing</h3>
-		<p>And Click</p>
+		<h2>
+			Go 
+			<span>
+				Voodoo
+			</span>
+		</h2>
+		<h3>
+			Do something amazing
+		</h3>
+		<p>
+			And Click
+		</p>
 	  </div>			
 	</div>
   </div>
@@ -99,7 +117,7 @@
 						</span>
 					</a>
 				</div>         
-			</div><!--End Grid-->
+			</div>
 		
 			<div class="close-icon">
 				<div></div>
@@ -107,5 +125,7 @@
 			</div> 
 		</div>
 	</div>
-	<h1 id="company_name">DAVALL CAREERS</h1>
+	<h1 id="company_name">
+		DAVALL CAREERS
+	</h1>
 {% endblock%}

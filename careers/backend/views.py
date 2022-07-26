@@ -20,12 +20,4 @@ def application_form(request):
     return render(request, "backend/application_form.html", {
         "backend" : Application.objects.all()
     })
-def applicant_form(request, pk):
-    application = Application.objects.get(pk=pk)
-    if request.method == "POST":
-        data = request.POST
-        first_name = data.get("first_name")
-        first_name.save()
-    return render(request, "backend/application_form.html")
-    
         

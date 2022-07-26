@@ -37,7 +37,8 @@ body {
   <div class="container">
     <div class="apply_box">
 
-        <form action="">
+        <form action="" method="post">
+            {% csrf_token %}
             <div class="form_container">
                 <div class="form_control">
                     <label for="first_name">
@@ -64,7 +65,7 @@ body {
                     <label for="job_role">
                         Job Role
                     </label>
-                    <select id="job_role" nmae="job_role">
+                    <select id="job_role" name="job_role">
                         <option value="">
                             Select Job Role
                         </option>
